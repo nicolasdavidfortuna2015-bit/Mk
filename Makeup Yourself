@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Marca</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff69b4; /* rosa destaque */
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ff69b4; /* rosa destaque */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #ff69b4; /* rosa destaque */
+        }
+
+        .mvv {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .mvv-item {
+            border-left: 4px solid #ff69b4;
+            padding-left: 15px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nossa Marca</h1>
+    </header>
+
+    <section>
+        <h2>Sobre Nós</h2>
+        <p>
+            Nossa marca nasceu em um momento <strong>desafiador</strong>. A situação estava <strong>precária</strong>, mas nossa paixão por <strong>maquiagem, batons e cuidados com a pele</strong> nos motivou a criar algo diferente. Cada produto que desenvolvemos carrega <strong>dedicação</strong> e <strong>qualidade</strong>, pensando sempre em valorizar a beleza de quem usa.
+        </p>
+        <p>
+            Queremos que cada cliente sinta a <strong>conexão</strong> com a nossa história e a confiança de estar usando produtos que realmente cuidam e transformam.
+        </p>
+    </section>
+
+    <section>
+        <h2>Produtos</h2>
+        <p>
+            Trabalhamos com: <strong>maquiagens</strong>, <strong>batons</strong>, <strong>skincare</strong>. Cada item é pensado para oferecer <strong>eficácia, segurança e estilo</strong>, destacando o melhor de cada pessoa.
+        </p>
+    </section>
+
+    <section>
+        <h2>Missão, Visão e Valores (MVV)</h2>
+        <div class="mvv">
+            <div class="mvv-item">
+                <h3>Missão</h3>
+                <p>
+                    Oferecer <strong>produtos de beleza de alta qualidade</strong>, que realcem a autoestima e tragam confiança a todos que nos escolhem.
+                </p>
+            </div>
+            <div class="mvv-item">
+                <h3>Visão</h3>
+                <p>
+                    Ser reconhecida como uma marca <strong>inovadora, inclusiva e referência no mercado de beleza</strong>, conectando pessoas à nossa paixão por cuidado e estilo.
+                </p>
+            </div>
+            <div class="mvv-item">
+                <h3>Valores</h3>
+                <p>
+                    <strong>Paixão, qualidade, respeito, confiança e inovação</strong> são os pilares que guiam todas as nossas ações e decisões.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Nossa Marca. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
