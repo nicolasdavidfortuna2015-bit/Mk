@@ -1,120 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Marca</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fff;
-            color: #000;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MK Makeup</title>
 
-        header {
-            background-color: #ff69b4; /* rosa destaque */
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
+<style>
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#fff;
+color:#000;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+/* MENU */
 
-        h2 {
-            color: #ff69b4; /* rosa destaque */
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+nav{
+background:black;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:40px;
+}
 
-        p {
-            margin-bottom: 20px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 
-        strong {
-            color: #ff69b4; /* rosa destaque */
-        }
+nav a:hover{
+color:#ff69b4;
+}
 
-        .mvv {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+/* HEADER */
 
-        .mvv-item {
-            border-left: 4px solid #ff69b4;
-            padding-left: 15px;
-            background-color: #f9f9f9;
-        }
+header{
+background:linear-gradient(#ff69b4,#ffb6d9);
+text-align:center;
+padding:50px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #000;
-            color: #fff;
-            margin-top: 40px;
-        }
-    </style>
+.logo{
+width:200px;
+}
+
+/* SEÇÕES */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+h2{
+color:#ff69b4;
+text-align:center;
+}
+
+strong{
+color:#ff69b4;
+}
+
+/* CATÁLOGO */
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.produto{
+border:2px solid #ff69b4;
+border-radius:12px;
+padding:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.produto:hover{
+transform:scale(1.05);
+}
+
+.produto img{
+width:100%;
+border-radius:10px;
+}
+
+/* MVV */
+
+.mvv{
+margin-top:30px;
+}
+
+.mvv div{
+background:#f9f9f9;
+border-left:5px solid #ff69b4;
+padding:20px;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Nossa Marca</h1>
-    </header>
 
-    <section>
-        <h2>Sobre Nós</h2>
-        <p>
-            Nossa marca nasceu em um momento <strong>desafiador</strong>. A situação estava <strong>precária</strong>, mas nossa paixão por <strong>maquiagem, batons e cuidados com a pele</strong> nos motivou a criar algo diferente. Cada produto que desenvolvemos carrega <strong>dedicação</strong> e <strong>qualidade</strong>, pensando sempre em valorizar a beleza de quem usa.
-        </p>
-        <p>
-            Queremos que cada cliente sinta a <strong>conexão</strong> com a nossa história e a confiança de estar usando produtos que realmente cuidam e transformam.
-        </p>
-    </section>
+<!-- MENU -->
 
-    <section>
-        <h2>Produtos</h2>
-        <p>
-            Trabalhamos com: <strong>maquiagens</strong>, <strong>batons</strong>, <strong>skincare</strong>. Cada item é pensado para oferecer <strong>eficácia, segurança e estilo</strong>, destacando o melhor de cada pessoa.
-        </p>
-    </section>
+<nav>
 
-    <section>
-        <h2>Missão, Visão e Valores (MVV)</h2>
-        <div class="mvv">
-            <div class="mvv-item">
-                <h3>Missão</h3>
-                <p>
-                    Oferecer <strong>produtos de beleza de alta qualidade</strong>, que realcem a autoestima e tragam confiança a todos que nos escolhem.
-                </p>
-            </div>
-            <div class="mvv-item">
-                <h3>Visão</h3>
-                <p>
-                    Ser reconhecida como uma marca <strong>inovadora, inclusiva e referência no mercado de beleza</strong>, conectando pessoas à nossa paixão por cuidado e estilo.
-                </p>
-            </div>
-            <div class="mvv-item">
-                <h3>Valores</h3>
-                <p>
-                    <strong>Paixão, qualidade, respeito, confiança e inovação</strong> são os pilares que guiam todas as nossas ações e decisões.
-                </p>
-            </div>
-        </div>
-    </section>
+<a href="#sobre">Sobre</a>
+<a href="#produtos">Produtos</a>
+<a href="#mvv">MVV</a>
 
-    <footer>
-        &copy; 2026 Nossa Marca. Todos os direitos reservados.
-    </footer>
+</nav>
+
+<!-- HEADER -->
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<h1>MK Makeup</h1>
+
+<p>Beleza • Confiança • Autoestima</p>
+
+</header>
+
+<!-- SOBRE -->
+
+<section id="sobre">
+
+<h2>Nossa História</h2>
+
+<p>
+Nossa marca nasceu em um momento <strong>difícil</strong>, quando a situação estava <strong>precária</strong>. Mesmo assim decidimos transformar a dificuldade em <strong>força</strong>.
+</p>
+
+<p>
+Assim surgiu a <strong>MK Makeup</strong>, criada com paixão por <strong>maquiagem</strong>, <strong>batons</strong> e <strong>skincare</strong>. Nosso objetivo é ajudar cada pessoa a se sentir <strong>confiante</strong>, <strong>bonita</strong> e <strong>especial</strong>.
+</p>
+
+</section>
+
+<!-- CATÁLOGO -->
+
+<section id="produtos">
+
+<h2>Catálogo de Produtos</h2>
+
+<div class="catalogo">
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1583241800967-5dfd0a7f1a3d">
+<h3>Rímel</h3>
+<p>Destaque e volume para seus cílios.</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30">
+<h3>Batom</h3>
+<p>Cores elegantes para qualquer ocasião.</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1612810806546-0d5a5b0e4b13">
+<h3>Esponja de Maquiagem</h3>
+<p>Aplicação perfeita e acabamento profissional.</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1600423115367-87ea7661688f">
+<h3>Pincel Profissional</h3>
+<p>Precisão e suavidade na maquiagem.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MVV -->
+
+<section id="mvv">
+
+<h2>Missão, Visão e Valores</h2>
+
+<div class="mvv">
+
+<div>
+<h3>Missão</h3>
+<p>Criar <strong>produtos de beleza de qualidade</strong> que elevem a autoestima e valorizem a beleza natural.</p>
+</div>
+
+<div>
+<h3>Visão</h3>
+<p>Ser uma marca reconhecida pela <strong>qualidade</strong>, <strong>confiança</strong> e <strong>inovação</strong>.</p>
+</div>
+
+<div>
+<h3>Valores</h3>
+<p><strong>Paixão, respeito, dedicação, qualidade e confiança</strong>.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer>
+
+<p>© 2026 Todos os direitos reservados</p>
+<p>Nicolas Fortuna • Laura Alcantra • Eduarda • Aline</p>
+
+</footer>
+
 </body>
 </html>
